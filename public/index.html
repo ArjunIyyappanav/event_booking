@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Event Booking</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <h1>Upcoming Screenings</h1>
+
+  <ul id="screenings"></ul>
+
+  <section id="details" hidden>
+    <h2 id="detail-title"></h2>
+    <p id="detail-meta"></p>
+
+    <div id="seats" class="seats"></div>
+
+    <h3>Book Seat</h3>
+    <form id="book-form">
+      <input type="text" id="seat_numbers" placeholder="Seat Numbers (e.g. 3,5,7)" required>
+      <input type="text" id="buyer_name" placeholder="Your Name" required>
+      <input type="email" id="buyer_email" placeholder="Email (optional)">
+      <label style="font-size: 12px;width: fit-content;padding-top: 8px;">DOB</label>
+      <input type="date" id="buyer_dob" required>
+      <label><input type="checkbox" id="pay_now"> Pay Now</label>
+      <button>Submit</button>
+    </form>
+
+    <p id="msg"></p>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
